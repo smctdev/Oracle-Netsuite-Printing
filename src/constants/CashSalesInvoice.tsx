@@ -392,7 +392,7 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
 
   const bjvSiOldSizeData = [];
 
-  const carsSIfldNewSizeData = ["SMAC", "DSMSI","DSMSB","DSMSO"];
+  const carsSIfldNewSizeData = ["SMAC", "DSMSI","DSMSB","DSMSO","BOHK"];
 
   switch (true) {
     // FDL CASES
@@ -549,8 +549,8 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
       return <Iligan data={data} />;
     case "SANJ" === user?.branchCode:
       return <SMCTSanJose data={data} />;
-    case "BOHK" === user?.branchCode:
-      return <Kia data={data} />;
+    // case "BOHK" === user?.branchCode:
+    //   return <Kia data={data} />;
     case "CARS" === user?.branchCode:
       return <SMCTCarcar data={data} />;
     case "CALI" === user?.branchCode:
