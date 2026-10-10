@@ -4,7 +4,7 @@ export default function Footer() {
       <p className="text-sm text-white text-center">
         © 2024 - {new Date().getFullYear()} All Rights Reserved | By SMCT WEB DEV with ❤
         <br />
-        Macmac | Irvin | Noreen | Jenecil | Allan
+        Macmac | Irvin | Noreen | Jenecil
       </p>
     </div>
   );

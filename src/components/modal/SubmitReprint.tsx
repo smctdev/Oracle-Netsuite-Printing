@@ -31,12 +31,6 @@ export default function SubmitReprint({
         position: "IT Supervisor",
       },
       {
-        name: "Dev_Allan-J",
-        link: "https://chat.smctgroup.ph/direct/Dev_Allan-J",
-        profile_picture: "https://chat.smctgroup.ph/avatar/Dev_Allan-J",
-        position: "Web Developer",
-      },
-      {
         name: "dev_jenecil",
         link: "https://chat.smctgroup.ph/direct/dev_jenecil",
         profile_picture: "https://chat.smctgroup.ph/avatar/dev_jenecil",
