@@ -388,7 +388,7 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
   // BJV
   const bjvCsiNewSizeData = [];
 
-  const bjvCSiOldSizeData = ["CARMB","DSMB-CI"];
+  const bjvCSiOldSizeData = ["CARMB","DSMSB-CI"];
 
   const bjvSiNewSizeData = [];
 
