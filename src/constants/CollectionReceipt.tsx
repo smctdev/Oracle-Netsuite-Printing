@@ -233,7 +233,7 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
     "CALAP2",
     "ANTI",
     "DANAO",
-    "SMAC",
+    // "SMAC",
     "IMED",
     "MAHA",
     "BALD",
@@ -286,6 +286,7 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
     "REMI2",
     "PARD2",
     "BOHK",
+    "SMAC",
     // "PARD",
     "CATM",
   ];
