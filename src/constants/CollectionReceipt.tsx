@@ -137,11 +137,11 @@ import HDAyala from "@/utils/collectionreceipt/global/fdl/new/hd/HDAyala";
 import HO_DAP2 from "@/utils/collectionreceipt/global/fdl/new/dap/HO_DAP2";
 import DSMDinagat from "@/utils/collectionreceipt/global/fdl/new/dsm/DSMDinagat";
 import SMCTTubigon from "@/utils/collectionreceipt/global/fdl/old/smct/SMCTTubigon";
-import DSMLahug from "@/utils/official-receipt/global/fdl/old/dsm/DSMLahug";
 import DsmMedellin from "@/utils/collectionreceipt/global/fdl/new/dsm/dsm-medellin";
 import DSMBalas from "@/utils/collectionreceipt/global/fdl/new/dsm/DSMBalas";
 import DSMElsa from "@/utils/collectionreceipt/global/fdl/new/dsm/DSMElsa";
 import IloIlo from "@/utils/collectionreceipt/global/celrose/old/dsm/ilo-ilo";
+import DSMLahug from "@/utils/collectionreceipt/global/fdl/old/dsm/DSMLahug";
 
 //import Argao from "@/utils/collectionreceipt/global/fdl/old/dsm/Argao";
 
@@ -323,7 +323,6 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
     "DSMD",
     "KABA",
     "DSMBL",
-    "LAHUG",
   ];
 
   const fdlOrNewSizeData = [];
@@ -674,8 +673,8 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
       return <DSMDinagat data={data} />;
     case "TUBI" === user?.branchCode:
       return <SMCTTubigon data={data} />;
-    // case "LAHUG" === user?.branchCode:
-    //   return <DSMLahug data={data} />;
+    case "LAHUG" === user?.branchCode:
+      return <DSMLahug data={data} />;
     case "MEDE" === user?.branchCode:
       return <DsmMedellin data={data} />;
     case "BALAS" === user?.branchCode:
