@@ -19,7 +19,7 @@ const DSMLahug: React.FC<PrintPageProps> = ({ data }) => {
   return (
     <div className="text-xs w-[805.03937008px] h-[415.7480315px]">
       <div className="flex mt-[65.1732283431px]">
-        <p className="pl-[500.07874016px] w-[143.62204724px]">
+        <p className="pl-[530.07874016px] w-[143.62204724px]">
           {data[1]?.[CR_Date] || <span className="opacity-0">No data</span>}
         </p>
       </div>
@@ -55,7 +55,7 @@ const DSMLahug: React.FC<PrintPageProps> = ({ data }) => {
             )}
           </p>
         </div>
-        <div className="w-[351.41732283px]">
+        <div className="w-[321.41732283px]">
           <p className="pl-[1.913385827px]">
             {FormattedNumber(data[1]?.[CR_AmountInFigures]) || (
               <span className="opacity-0">No data</span>
@@ -65,20 +65,20 @@ const DSMLahug: React.FC<PrintPageProps> = ({ data }) => {
       </div>
       <div className="w-[782.36220472px] mt-[7.8267716539px]">
         <p className="w-[419.52755906px] ml-[347.71653543px]">
-          {data[1]?.[CR_Memo]?.substring(0, 70) || (
+          {data[1]?.[CR_Memo]?.substring(0, 40) || (
             <span className="opacity-0">No data</span>
           )}
         </p>
       </div>
       <div className="w-[782.36220472px] mt-[6.8267716539px]">
         <p className="w-[521.57480315px] ml-[245.66929134px]">
-          {data[1]?.[CR_Memo]?.substring(70) || (
+          {data[1]?.[CR_Memo]?.substring(40) || (
             <span className="opacity-0">No data</span>
           )}
         </p>
       </div>
 
-      <div className="w-[782.36220472px] pl-[420.92913386px] mt-[28.7952755906px] text-[11px]">
+      <div className="w-[782.36220472px] pl-[420.92913386px] mt-[1.7952755906px] text-[11px]">
         <p className="text-center w-[170.07874016px]">
           {data[1]?.[CR_PartnerName] || (
             <span className="opacity-0">No data</span>
