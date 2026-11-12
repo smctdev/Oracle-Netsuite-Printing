@@ -18,7 +18,7 @@ const DSMLahug: React.FC<PrintPageProps> = ({ data }) => {
 
   return (
     <div className="text-xs w-[805.03937008px] h-[415.7480315px]">
-      <div className="flex mt-[65.1732283431px]">
+      <div className="flex mt-[45.1732283431px]">
         <p className="pl-[530.07874016px] w-[143.62204724px]">
           {data[1]?.[CR_Date] || <span className="opacity-0">No data</span>}
         </p>
@@ -55,7 +55,7 @@ const DSMLahug: React.FC<PrintPageProps> = ({ data }) => {
             )}
           </p>
         </div>
-        <div className="w-[321.41732283px]">
+        <div className="w-[300.41732283px]">
           <p className="pl-[1.913385827px]">
             {FormattedNumber(data[1]?.[CR_AmountInFigures]) || (
               <span className="opacity-0">No data</span>
