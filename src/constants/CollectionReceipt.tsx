@@ -342,6 +342,7 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
     "CARMCDO",
     "DSMPO",
     "CABA",
+    "CALI",
   ];
 
   const obbusCrOldSizeData = [
@@ -557,8 +558,8 @@ const CollectionReceipt: React.FC<PrintPageProps> = ({ data }) => {
     //   return <HDInabanga data={data} />; //OR
     // case "JAGN" === user?.branchCode:
     //   return <SMCTJagna data={data} />; //OR
-    case "CALI" === user?.branchCode:
-      return <Calinan data={data} />;
+    // case "CALI" === user?.branchCode:
+    //   return <Calinan data={data} />;
     case "CAMD" === user?.branchCode:
       return <DAPCaminoNuevo data={data} />; //OR
     // case "PARD" === user?.branchCode:
