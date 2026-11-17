@@ -24,12 +24,12 @@ const DSMDinagat = ({ data }: any) => {
 
   return (
     <div className="text-xs h-[400.62992126px] w-[767.24409449px]">
-      <div className="w-[117.16535433px] flex items-center mt-[98.9291338579px] ml-[604.72440945px] h-[21.921259843px]">
+      <div className="w-[117.16535433px] flex items-center mt-[80.9291338579px] ml-[604.72440945px] h-[21.921259843px]">
         <p className="text-xs ml-[11.338582677px]">
           {data[1]?.[CR_Date] || <span className="opacity-0">No data</span>}
         </p>
       </div>
-      <div className="h-[61.984251969px] mt-[37.039370079px] ml-[149.29133858px]">
+      <div className="h-[61.984251969px] mt-[55.039370079px] ml-[149.29133858px]">
         <p className="w-[563.1496063px] ml-[11.338582677px] h-[20.409448819px] flex items-center">
           {enyeFormat(data[1]?.[CR_Name]) || <span className="opacity-0">No data</span>}
         </p>
@@ -40,7 +40,7 @@ const DSMDinagat = ({ data }: any) => {
           {data[1]?.[CR_Address] || <span className="opacity-0">No data</span>}
         </p>
       </div>
-      <div className="flex w-[680.31496063px] mx-[37.795275591px] mt-[34.37007874px]">
+      <div className="flex w-[680.31496063px] mx-[37.795275591px] mt-[52.37007874px]">
         <div className="flex flex-col w-[568.81889764px]">
           <p className="h-[23.433070866px] pl-[83.149606299px]">
             {data[1]?.[CR_Memo]?.substring(0, 92) || (
