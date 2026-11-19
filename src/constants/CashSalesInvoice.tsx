@@ -165,6 +165,7 @@ import DSMMahayag from "@/utils/salesinvoice/global/fdl/new/dsm/DSMMahayag";
 import DAPSucabon from "@/utils/salesinvoice/global/fdl/new/dap/DAPSucabon";
 import Hyundai from "@/utils/salesinvoice/global/fdl/new/smct/Hyundai";
 import Ubay from "@/utils/salesinvoice/global/obbus/old/dsm/Ubay";
+import SMCTTanza2 from "@/utils/salesinvoice/global/fdl/new/smct/SMCTTanz2";
 
 const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
   const { user } = useAuth();
@@ -242,7 +243,6 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
 
   const fdlSiNewSizeData = [
     "GUIN2",
-    "TANZ2",
     "SANT2",
     //  "DSMD2"
     "DSMT2",
@@ -627,6 +627,8 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
       return <DAPSucabon data={data} />;
     case "UBAY" === user?.branchCode:
       return <Ubay data={data} />;
+    case "TANZ2" === user?.branchCode:
+    return <SMCTTanza2 data={data} />;
 
     default:
       return (
