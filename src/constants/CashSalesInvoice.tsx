@@ -166,6 +166,7 @@ import DAPSucabon from "@/utils/salesinvoice/global/fdl/new/dap/DAPSucabon";
 import Hyundai from "@/utils/salesinvoice/global/fdl/new/smct/Hyundai";
 import Ubay from "@/utils/salesinvoice/global/obbus/old/dsm/Ubay";
 import SMCTTanza2 from "@/utils/salesinvoice/global/fdl/new/smct/SMCTTanz2";
+import SMCTBaybay from "@/utils/salesinvoice/global/fdl/new/smct/SMCTBaybay";
 
 const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
   const { user } = useAuth();
@@ -341,7 +342,7 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
      "SLIL",
   ];
 
-  const fdlSiOldSizeData = ["DAPI", "TANZ", "BONI", "VITA", "BAYB"];
+  const fdlSiOldSizeData = ["DAPI", "TANZ", "BONI", "VITA"];
 
   // OBBUS
   const obbusCsiNewSizeData = [];
@@ -628,7 +629,9 @@ const CashSalesInvoice: React.FC<PrintPageProps> = ({ data }) => {
     case "UBAY" === user?.branchCode:
       return <Ubay data={data} />;
     case "TANZ2" === user?.branchCode:
-    return <SMCTTanza2 data={data} />;
+      return <SMCTTanza2 data={data} />;
+    case "BAYB" === user?.branchCode:
+      return <SMCTBaybay data={data} />;
 
     default:
       return (
